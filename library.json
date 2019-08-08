@@ -1,5 +1,5 @@
 {
-  "title": "Drag Text",
+  "title": "Drag Text IDO",
   "description": "Drag and drop pieces of text to create complete sentences.",
   "majorVersion": 1,
   "minorVersion": 8,
@@ -14,7 +14,7 @@
   ],
   "author": "Joubel",
   "license": "MIT",
-  "machineName": "H5P.DragText",
+  "machineName": "H5P.DragTextIDO",
   "preloadedCss": [
     {
       "path": "dist/h5p-drag-text.css"
@@ -42,7 +42,7 @@
       "minorVersion": 3
     },
     {
-      "machineName": "H5P.Question",
+      "machineName": "H5P.QuestionIDO",
       "majorVersion": 1,
       "minorVersion": 4
     }
