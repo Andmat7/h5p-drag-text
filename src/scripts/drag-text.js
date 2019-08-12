@@ -59,7 +59,7 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
    * Initialize module.
    *
    * @class H5P.DragText
-   * @extends H5P.Question
+   * @extends H5P.QuestionIDO
    * @param {Object} params Behavior settings
    * @param {Number} contentId Content identification
    * @param {Object} contentData Object containing task specific content data
@@ -314,7 +314,7 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
 
   /**
    * Registers this question type's DOM elements before they are attached.
-   * Called from H5P.Question.
+   * Called from H5P.QuestionIDO.
    */
   DragText.prototype.registerDomElements = function () {
 
@@ -681,7 +681,7 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
       this.trigger(xAPIEvent);
     }
 
-    var scoreText = H5P.Question.determineOverallFeedback(this.params.overallFeedback, score / maxScore)
+    var scoreText = H5P.QuestionIDO.determineOverallFeedback(this.params.overallFeedback, score / maxScore)
       .replace(/@score/g, score.toString())
       .replace(/@total/g, maxScore.toString());
 
@@ -1517,6 +1517,6 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
 
   return DragText;
 
-}(H5P.jQuery, H5P.Question, H5P.ConfirmationDialog));
+}(H5P.jQuery, H5P.QuestionIDO, H5P.ConfirmationDialog));
 
 export default H5P.DragText;
